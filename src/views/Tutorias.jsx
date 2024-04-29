@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import TutoriaCard from '../components/TutoriaCard';
+import clasesData from '../data/clases.json'; // Importa los datos desde el archivo JSON
 
 function FilterSearch({ tutorias, onFilter }) {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
   const handleFilterChange = (selectedOptions) => {
     setSelectedOptions(selectedOptions);
-    onFilter(selectedOptions);
+    onFilter(selectedOptions); // Llama a la función onFilter cada vez que haya un cambio en las opciones seleccionadas
   };
 
   return (
@@ -36,22 +37,26 @@ function getOptionsFromTutorias(tutorias) {
 
 function Tutorias() {
   const [filteredTutorias, setFilteredTutorias] = useState([]);
+  const [tutorias, setTutorias] = useState([]);
+
+  useEffect(() => {
+    // Cargar los datos desde clases.json al inicio
+    setTutorias(clasesData);
+    setFilteredTutorias(clasesData);
+  }, []);
 
   const handleFilter = (selectedOptions) => {
     let filteredData = [...tutorias];
     selectedOptions.forEach(option => {
-      const { value: filterValue, label: filterLabel } = option;
-      filteredData = filteredData.filter(tutoria => tutoria.asignatura === filterValue || tutoria.modalidad === filterValue || tutoria.locacion === filterValue);
+      const { value: filterValue } = option;
+      filteredData = filteredData.filter(tutoria =>
+        tutoria.asignatura === filterValue ||
+        tutoria.modalidad === filterValue ||
+        tutoria.locacion === filterValue
+      );
     });
     setFilteredTutorias(filteredData);
   };
-
-  // Definir tus tutorías aquí
-  const tutorias = [
-    { id: 1, asignatura: 'Matemáticas', modalidad: 'Presencial', locacion: 'Ciudad de México' },
-    { id: 2, asignatura: 'Física', modalidad: 'Virtual', locacion: 'Guadalajara' },
-    // Otras tutorías...
-  ];
 
   return (
     <div>
@@ -69,4 +74,3 @@ function Tutorias() {
 }
 
 export default Tutorias;
-

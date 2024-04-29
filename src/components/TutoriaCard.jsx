@@ -38,20 +38,5 @@ function TutoriaCard({ tutoria }) {
     </div>
   );
 }
-
-function TutoriaList() {
-  return (
-    <div className="container">
-      <div className="row">
-        {clases.map((tutoria) => (
-          <div key={tutoria.tutor_id} className="col-md-4 mb-3">
-            <TutoriaCard tutoria={tutoria} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default TutoriaList;
+export default React.memo(TutoriaCard);
 
