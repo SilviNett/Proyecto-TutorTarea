@@ -1,25 +1,34 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReservedTutorias from './ReservedTutorias';
-import { Card, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col, Table } from 'react-bootstrap';
+import { FaUser } from 'react-icons/fa'; 
 
 function Profile() {
-  // Datos ficticios del usuario
+
   const user = {
     name: "John Doe",
     email: "johndoe@example.com",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150", // URL de la imagen del usuario
   };
+
+
+  const tutoriasReservadas = [
+    { id: 1, nombre: 'Tutoría 1', estado: 'Pagada', realizado: 'Realizado' },
+    { id: 2, nombre: 'Tutoría 2', estado: 'Pendiente de pago', realizado: 'No Realizado' },
+    { id: 3, nombre: 'Tutoría 3', estado: 'Pagada', realizado: 'Realizado' }
+  ];
 
   return (
     <div className="container mt-5">
       <Row>
         <Col md={6}>
-          {/* Contenido del perfil */}
-          <h2>Perfil de Usuario</h2>
+     
+          <h2>Datos de usuario</h2>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={user.image} />
+            <div style={{ textAlign: 'center' }}>
+              <FaUser size={64} />
+            </div>
             <Card.Body>
               <Card.Title>{user.name}</Card.Title>
               <Card.Text>
@@ -32,8 +41,28 @@ function Profile() {
           </Card>
         </Col>
         <Col md={6}>
-          {/* Contenido de las tutorías reservadas */}
-          <ReservedTutorias />
+    
+          <div>
+            <h2>Historial</h2>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Estado</th>
+                  <th>Realizado</th> 
+                </tr>
+              </thead>
+              <tbody>
+                {tutoriasReservadas.map(tutoria => (
+                  <tr key={tutoria.id}>
+                    <td>{tutoria.nombre}</td>
+                    <td style={{ color: tutoria.estado === 'Pendiente de pago' ? 'red' : tutoria.estado === 'Pagada' ? 'blue' : 'inherit' }}>{tutoria.estado}</td>
+                    <td style={{ color: tutoria.realizado === 'Realizado' ? 'green' : 'gray' }}>{tutoria.realizado}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
         </Col>
       </Row>
     </div>
@@ -41,3 +70,5 @@ function Profile() {
 }
 
 export default Profile;
+
+

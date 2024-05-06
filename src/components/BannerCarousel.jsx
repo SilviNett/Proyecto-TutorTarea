@@ -8,7 +8,7 @@ import info4 from '../assets/info4.jpeg';
 
 function BannerCarousel() {
   return (
-    <Carousel>
+    <Carousel className="banner-carousel">
       <Carousel.Item>
         <img
           className="d-block w-100"

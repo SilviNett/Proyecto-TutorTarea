@@ -1,10 +1,11 @@
 [
     {
+        "id": 1,
         "asignatura": "Matemáticas",
         "descripcion": "Curso divertido de matemáticas para niños de 5to básico, el aprendizaje de los números sea emocionante y comprensible.",
         "tutor_id": 1,
         "nombre": "Juan Pérez",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 15000,
         "imagenUrl": "https://media.istockphoto.com/id/1049942766/es/foto/hombre-feliz-en-un-aula-con-un-grupo-de-estudiantes.jpg?s=612x612&w=0&k=20&c=d-Iz5Lt-_gNvWZ_i5KW7ssxBCZkfEd6i_9sZ0UflpaY=",
         "horario": "Lunes 16:00",
@@ -13,11 +14,12 @@
         "cupos": 8
     },
     {
+        "id": 2,
         "asignatura": "Historia",
         "descripcion": "Aventúrate a través del tiempo con nuestro curso de historia para niños, explorando eventos y personajes que moldearon nuestro mundo.",
         "tutor_id": 2,
         "nombre": "María Rodríguez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 40000,
         "imagenUrl": "https://media.istockphoto.com/id/1152078164/es/foto/estudiante-adulto-sosteniendo-laptop.jpg?s=612x612&w=0&k=20&c=oCOI4EKgcxXE2DdTfLyZTng9iLqn2x9Omb3_4xG9VBU=",
         "horario": "Sábado 17:00",
@@ -26,6 +28,7 @@
         "cupos": 2
     },
     {
+        "id": 3,
         "asignatura": "Inglés",
         "descripcion": "Curso interactivo de inglés que ayuda a los niños a mejorar sus habilidades conversacionales jugando y practicando con amigos.",
         "tutor_id": 3,
@@ -39,11 +42,12 @@
         "cupos": 14
     },
     {
+        "id": 4,
         "asignatura": "Ciencias Naturales",
         "descripcion": "Explora el fascinante mundo de las ciencias naturales con experimentos y actividades prácticas diseñadas especialmente para niños curiosos.",
         "tutor_id": 4,
         "nombre": "Carlos Gutiérrez",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 60000,
         "imagenUrl": "https://media.istockphoto.com/id/1278976696/es/foto/hombre-maduro-profesor-de-pie-en-clase.jpg?s=612x612&w=0&k=20&c=1jZHwAzoTv9LC_mRFY8i6Ny62a0E5ES7Y26rk47x4K8=",
         "horario": "Jueves 16:30",
@@ -52,11 +56,12 @@
         "cupos": 12
     },
     {
+        "id": 5,
         "asignatura": "Lenguaje",
         "descripcion": "Mejora tus habilidades de lectura y escritura con nuestro curso de lenguaje, donde aprenderás a través de cuentos, juegos y actividades divertidas.",
         "tutor_id": 5,
         "nombre": "Ana Martínez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 45000,
         "imagenUrl": "https://media.istockphoto.com/id/486325400/es/foto/pedir-a-sus-profesores-estudiantes-una-pregunta.jpg?s=612x612&w=0&k=20&c=YHeHA7Lr_wqAodg5BbgXamkSklqBLpdgGbbHy5ZQhEM=",
         "horario": "Miércoles 18:00",
@@ -65,11 +70,12 @@
         "cupos": 11
     },
     {
+        "id": 6,
         "asignatura": "Arte",
         "descripcion": "Despierta tu creatividad con técnicas de pintura y dibujo, perfecto para jóvenes artistas.",
         "tutor_id": 6,
         "nombre": "Laura Vásquez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 20000,
         "imagenUrl": "https://media.istockphoto.com/id/131939892/es/foto/comienzo-del-a%C3%B1o-escolar.jpg?s=612x612&w=0&k=20&c=d2tk88qkTd3lsGpZKs1tss6eqgbcZtMD1RDRvsHoVa8=",
         "horario": "Viernes 10:00",
@@ -78,11 +84,12 @@
         "cupos": 10
      },
     {
+        "id": 7,
         "asignatura": "Robótica",
         "descripcion": "Introducción a la robótica con kits LEGO Mindstorms, aprendiendo a construir y programar robots.",
         "tutor_id": 7,
         "nombre": "Fernando Ruiz",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 35000,
         "imagenUrl": "https://media.istockphoto.com/id/185041589/es/foto/profesor-docente-chino-a-primario-de-ni%C3%B1os.jpg?s=612x612&w=0&k=20&c=r8-8jAAbeOq_jqx5Bp6FO9vFwey46A2l5y99IwISRnM=",
         "horario": "Sábado 11:00",
@@ -91,11 +98,12 @@
         "cupos": 15
     },
     {
+        "id": 8,
         "asignatura": "Matemáticas",
         "descripcion": "Curso de matemáticas jugando con puzzles y problemas lógicos para desarrollar habilidades analíticas.",
         "tutor_id": 1,
         "nombre": "Juan Pérez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 15000,
         "imagenUrl": "https://media.istockphoto.com/id/1049942766/es/foto/hombre-feliz-en-un-aula-con-un-grupo-de-estudiantes.jpg?s=612x612&w=0&k=20&c=d-Iz5Lt-_gNvWZ_i5KW7ssxBCZkfEd6i_9sZ0UflpaY=",
         "horario": "Sábado 09:30",
@@ -104,11 +112,12 @@
         "cupos": 7
     },
     {
+        "id": 9,
         "asignatura": "Ciencia",
         "descripcion": "Descubre los secretos de la ciencia con experimentos fáciles y divertidos para hacer en casa.",
         "tutor_id": 4,
         "nombre": "Carlos Gutiérrez",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 25000,
         "imagenUrl": "https://media.istockphoto.com/id/1278976696/es/foto/hombre-maduro-profesor-de-pie-en-clase.jpg?s=612x612&w=0&k=20&c=1jZHwAzoTv9LC_mRFY8i6Ny62a0E5ES7Y26rk47x4K8=",
         "horario": "Sábado 12:00",
@@ -117,11 +126,12 @@
         "cupos": 14
     },
     {
+        "id": 10,
         "asignatura": "Historia",
         "descripcion": "Viaje por la historia de Chile con cuentos y leyendas, aprendiendo de forma amena y participativa.",
         "tutor_id": 2,
         "nombre": "María Rodríguez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 40000,
         "imagenUrl": "https://media.istockphoto.com/id/1152078164/es/foto/estudiante-adulto-sosteniendo-laptop.jpg?s=612x612&w=0&k=20&c=oCOI4EKgcxXE2DdTfLyZTng9iLqn2x9Omb3_4xG9VBU=",
         "horario": "Sábado 14:00",
@@ -130,11 +140,12 @@
         "cupos": 5
     },
     {
+        "id": 11,
         "asignatura": "Inglés",
         "descripcion": "Curso dinámico de inglés con canciones, juegos y actividades interactivas para aprender divirtiéndote.",
         "tutor_id": 3,
         "nombre": "Sarah Oconor",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 30000,
         "imagenUrl": "https://media.istockphoto.com/id/1366724990/es/foto/sonriente-profesor-de-inform%C3%A1tica-usando-una-computadora-port%C3%A1til-durante-una-clase-y-mirando.jpg?s=612x612&w=0&k=20&c=wcLvTAuBASo1yxM7EoVd8mDIEYonEEmMoc0N68FfYqY=",
         "horario": "Martes 18:30",
@@ -143,11 +154,12 @@
         "cupos": 13
     },
     {
+        "id": 12,
         "asignatura": "Teatro",
         "descripcion": "Explora el teatro jugando a ser tus personajes favoritos y mejora tus habilidades de expresión.",
         "tutor_id": 8,
         "nombre": "Ana Martínez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 18000,
         "imagenUrl": "https://media.istockphoto.com/id/486325400/es/foto/pedir-a-sus-profesores-estudiantes-una-pregunta.jpg?s=612x612&w=0&k=20&c=YHeHA7Lr_wqAodg5BbgXamkSklqBLpdgGbbHy5ZQhEM=",
         "horario": "Miércoles 15:00",
@@ -156,11 +168,12 @@
         "cupos": 12
     },
     {
+        "id": 13,
         "asignatura": "Lenguaje",
         "descripcion": "Taller de escritura creativa para niños, estimulando la imaginación y creando sus propias historias.",
         "tutor_id": 5,
         "nombre": "Ana Martínez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 45000,
         "imagenUrl": "https://media.istockphoto.com/id/486325400/es/foto/pedir-a-sus-profesores-estudiantes-una-pregunta.jpg?s=612x612&w=0&k=20&c=YHeHA7Lr_wqAodg5BbgXamkSklqBLpdgGbbHy5ZQhEM=",
         "horario": "Jueves 16:30",
@@ -169,11 +182,12 @@
         "cupos": 8
     },
     {
+        "id": 14,
         "asignatura": "Música",
         "descripcion": "Introducción a la música con instrumentos simples y actividades para desarrollar el oído musical.",
         "tutor_id": 9,
         "nombre": "Sofía González",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 22000,
         "imagenUrl": "https://media.istockphoto.com/id/2044873369/es/foto/joven-profesora-de-m%C3%BAsica-y-su-alumno-usando-blackboard.jpg?s=612x612&w=0&k=20&c=kd-FeQO-wILh9TJ5HzFxcOFLGdl9osKqhJPaJ0L0dPc=",
         "horario": "Sábado 13:00",
@@ -182,11 +196,12 @@
         "cupos": 15
     },
     {
+        "id": 15,
         "asignatura": "Astronomía",
         "descripcion": "Aprende sobre estrellas, planetas y galaxias en un curso lleno de actividades y observaciones astronómicas.",
         "tutor_id": 10,
         "nombre": "Monica López",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 30000,
         "imagenUrl": "https://media.istockphoto.com/id/1443549146/es/foto/profesora-de-guarder%C3%ADa-sosteniendo-modelo-de-sol-durante-la-presentaci%C3%B3n.jpg?s=612x612&w=0&k=20&c=-_YZBAoVEv94Gl8NXHQTxwEGrSHdmWWkFtafs0nF61E=",
         "horario": "Sábado 11:30",
@@ -195,11 +210,12 @@
         "cupos": 9
     },
     {
+        "id": 16,
         "asignatura": "Ciencias Naturales",
         "descripcion": "Aprende sobre el medio ambiente y los ecosistemas con actividades prácticas y salidas al campo.",
         "tutor_id": 4,
         "nombre": "Carlos Gutiérrez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 35000,
         "imagenUrl": "https://media.istockphoto.com/id/1278976696/es/foto/hombre-maduro-profesor-de-pie-en-clase.jpg?s=612x612&w=0&k=20&c=1jZHwAzoTv9LC_mRFY8i6Ny62a0E5ES7Y26rk47x4K8=",
         "horario": "Jueves 19:00",
@@ -208,11 +224,12 @@
         "cupos": 12
     },
     {
+        "id": 17,
         "asignatura": "Geografía",
         "descripcion": "Explora mapas, países y culturas del mundo con actividades interactivas y tecnología GPS.",
         "tutor_id": 11,
         "nombre": "María Rodríguez",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 20000,
         "imagenUrl": "https://media.istockphoto.com/id/1152078164/es/foto/estudiante-adulto-sosteniendo-laptop.jpg?s=612x612&w=0&k=20&c=oCOI4EKgcxXE2DdTfLyZTng9iLqn2x9Omb3_4xG9VBU=",
         "horario": "Lunes 16:00",
@@ -221,11 +238,12 @@
         "cupos": 10
     },
     {
+        "id": 18,
         "asignatura": "Programación",
         "descripcion": "Introducción a la programación con Scratch, creando juegos y animaciones de manera divertida.",
         "tutor_id": 7,
         "nombre": "Fernando Ruiz",
-        "modalidad": "virtual",
+        "modalidad": "grupal",
         "precio": 30000,
         "imagenUrl": "https://media.istockphoto.com/id/1542582501/es/foto/feliz-cient%C3%ADfica-negra-estrechando-la-mano-de-su-colega-en-el-aula.jpg?s=612x612&w=0&k=20&c=MNGVkzWxx8jfuaCFRM5F6lNPYW1MSnIQgjLvjxo9u4U=",
         "horario": "Sábado 13:00",
@@ -234,11 +252,12 @@
         "cupos": 8
     },
     {
+        "id": 19,
         "asignatura": "Artes Plásticas",
         "descripcion": "Crea tus propias obras de arte aprendiendo técnicas de collage, pintura y modelado.",
         "tutor_id": 6,
         "nombre": "Laura Vásquez",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 25000,
         "imagenUrl": "https://media.istockphoto.com/id/1062146122/es/foto/maestro-mirando-ni%C3%B1o-dibujo.jpg?s=612x612&w=0&k=20&c=amuWe2-K9KDt4ecbVR_ESZl5pU9RvcWLFIqT1nz9wI4=",
         "horario": "Viernes 14:00",
@@ -247,11 +266,12 @@
         "cupos": 10
     },
     {
+        "id": 20,
         "asignatura": "Educación Física",
         "descripcion": "Mejora tu salud y energía con actividades físicas y deportes diseñados especialmente para niños.",
         "tutor_id": 12,
         "nombre": "Josefa Herrera",
-        "modalidad": "presencial",
+        "modalidad": "grupal",
         "precio": 15000,
         "imagenUrl": "https://media.istockphoto.com/id/1226814797/es/foto/clase-de-baile-retrato-de-longitud-completa-de-un-joven-profesor-de-baile-postive-hablando-con.jpg?s=612x612&w=0&k=20&c=nbrCEHs7vSDAA5lDGxkOK7hOE9aDW3sevXCCHdUjDEY=",
         "horario": "Sábado 11:00",

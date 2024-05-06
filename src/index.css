@@ -1,21 +1,18 @@
-/* Estilos globales */
-
-/* Fuente principal */
 body {
   font-family: 'Arial', sans-serif; 
 }
 
-/* Estilo para los enlaces */
+
 a {
-  color: #007bff; /* Color azul */
+  color: #007bff;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline; /* Subrayado al pasar el cursor */
+  text-decoration: underline; 
 }
 
-/* Estilo para los botones */
+
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -32,10 +29,10 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Cambio de color al pasar el cursor */
+  background-color: #0056b3; 
 }
 
-/* Estilo para las tarjetas */
+
 .card {
   border: 1px solid #ccc;
   border-radius: 0.25rem;
@@ -56,10 +53,10 @@ a:hover {
   color: #555;
 }
 
-/* Estilo para la barra de navegación */
+
 .navbar {
-  background-color: #f8f9fa; /* Color de fondo */
-  padding: 1rem 0; /* Espaciado interno */
+  background-color: #f8f9fa; 
+  padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -72,17 +69,28 @@ a:hover {
   margin-right: 1rem;
 }
 
-/* Contenedor principal */
+
 .container {
-  max-width: 1200px; /* Ancho máximo del contenido */
-  margin: 0 auto; /* Centrar el contenido */
-  padding: 0 1rem; /* Espaciado interno */
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 0 1rem;
 }
 
 .navbar-logo {
-  width: 150px; /* Cambia este valor según el tamaño deseado */
-  height: auto; /* Mantén la proporción original */
+  width: 150px; 
+  height: auto; 
 }
 .carousel{
-  padding: 20px 100px 101px 100px;
+  padding: 0;
+}
+.banner-carousel {
+  max-width: 100%; 
+  margin: auto;  
+  height: auto;  
+  max-height: 680px; 
+}
+.carousel img {
+  width: 100%;    
+  object-fit:cover; 
+  height: auto; 
 }

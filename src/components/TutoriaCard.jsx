@@ -1,42 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import clases from '../data/clases.json';
 
 function TutoriaCard({ tutoria }) {
   return (
-    <div className="card">
-      <img
-        src={tutoria.imagenUrl}
-        className="card-img-top"
-        alt="Imagen de la tutoría"
-        style={{ width: '30%', margin: 'auto', }}
-      /> {/* Establece el ancho de la imagen al 50% del tamaño de la tarjeta y la centra horizontalmente */}
+    <div className="card h-100">
+      <div className="card-img-top bg-cover" style={{ backgroundImage: `url(${tutoria.imagenUrl})`, height: '200px' }}> 
+      </div>
       <div className="card-body d-flex flex-column">
-        <h5 className="card-title" style={{ fontSize: '1.25rem' }}>
+        <h5 className="card-title">
           {tutoria.asignatura}
-        </h5>{' '}
-        {/* Establece el tamaño del título de la tarjeta */}
-        <p className="card-text" style={{ fontSize: '0.8rem' }}>
+        </h5>
+        <p className="card-text">
           {tutoria.descripcion}
-        </p>{' '}
-        {/* Establece el tamaño del texto de la tarjeta */}
-        <ul className="list-group list-group-flush" style={{ fontSize: '0.8rem' }}>
-          {' '}
-          {/* Establece el tamaño del texto de la lista */}
+        </p>
+        <ul className="list-group list-group-flush">
           <li className="list-group-item">Tutor: {tutoria.nombre}</li>
           <li className="list-group-item">Modalidad: {tutoria.modalidad}</li>
           <li className="list-group-item">Locación: {tutoria.locacion}</li>
           <li className="list-group-item">Tipo: {tutoria.tipo}</li>
         </ul>
-        <div className="mt-auto d-flex justify-content-end">
-          <button className="btn btn-primary" style={{ backgroundColor: '#03d6b3', border: 'none' }}>
+        <div className="mt-auto">
+          <Link to={`/tutoria/${tutoria.id}`} className="btn btn-primary" style={{ backgroundColor: '#03d6b3', border: 'none' }}> 
             Ver Detalle
-          </button>{' '}
-          {/* Cambia el color de fondo del botón y elimina el borde */}
+          </Link>
         </div>
       </div>
     </div>
-  );
+  ); 
 }
-export default React.memo(TutoriaCard);
 
+export default React.memo(TutoriaCard);
