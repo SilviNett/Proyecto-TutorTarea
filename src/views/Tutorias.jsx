@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import TutoriaCard from '../components/TutoriaCard';
-import clasesData from '../data/clases.json'; // Importa los datos desde el archivo JSON
+import clasesData from '../data/clases.json'; 
 
 function FilterSearch({ tutorias, onFilter }) {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
   const handleFilterChange = (selectedOptions) => {
     setSelectedOptions(selectedOptions);
-    onFilter(selectedOptions); // Llama a la función onFilter cada vez que haya un cambio en las opciones seleccionadas
+    onFilter(selectedOptions); 
   };
 
   return (
@@ -40,7 +40,6 @@ function Tutorias() {
   const [tutorias, setTutorias] = useState([]);
 
   useEffect(() => {
-    // Cargar los datos desde clases.json al inicio
     setTutorias(clasesData);
     setFilteredTutorias(clasesData);
   }, []);
@@ -59,12 +58,12 @@ function Tutorias() {
   };
 
   return (
-    <div>
-      <h2>Tutorías Disponibles</h2>
+    <div className="container py-2 px-0"> 
+      <h2 className="mb-2">Tutorías Disponibles</h2> 
       <FilterSearch tutorias={tutorias} onFilter={handleFilter} />
-      <div className="row">
+      <div className="row mx-0"> 
         {filteredTutorias.map((tutoria) => (
-          <div key={tutoria.id} className="col-md-4 mb-4">
+          <div key={tutoria.id} className="col-md-4 px-2 mb-2"> 
             <TutoriaCard tutoria={tutoria} />
           </div>
         ))}

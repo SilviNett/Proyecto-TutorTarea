@@ -1,7 +1,7 @@
 import React from 'react';
-import TutoriaCard from './TutoriaCard'; // Asegúrate de que la ruta de importación es correcta
+import TutoriaCard from './TutoriaCard'; 
 
-function TutoriaList({ clases }) { // Asume que 'clases' es pasado como prop
+function TutoriaList({ clases }) { 
   return (
     <div className="container">
       <div className="row">
